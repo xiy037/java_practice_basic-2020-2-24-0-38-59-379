@@ -9,7 +9,12 @@ public class JsonUtil {
 
   public static String convertToJson(Object object) {
     //TODO: change the code to pass the test
-
-    throw new NotImplementedException();
+    String result = "";
+    try {
+      result = String.format("{\"name\":\"%s\",\"age\":%d}", ((Person)object).getName(), ((Person)object).getAge());
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    return result;
   }
 }

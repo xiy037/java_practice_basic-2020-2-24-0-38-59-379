@@ -36,13 +36,13 @@ class JsonUtilTest {
 
     //TODO: change the code to pass the test
 
-    int expectedValue = Integer.MAX_VALUE;
+    int expectedValue = 0;
 
 
     assertEquals(expectedValue, getValue(2));
   }
 
-  private int getValue(int value) {
+  private static int getValue(int value) {
     try {
       return value * value;
     } catch (Exception e) {
@@ -53,6 +53,7 @@ class JsonUtilTest {
       }
     }
   }
+
 
 
 }
